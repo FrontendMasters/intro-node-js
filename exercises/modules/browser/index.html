@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <!-- order matters here for the script tags, as the next relies on the previous -->
+  <script src="data.js"></script>
+  <script src="api.js"></script>
+  <script src="app.js"></script>
+  <title>app</title>
+</head>
+<body>
+  <div id="app"></div>
+  
+  <script>
+    // browser only DOM code, don't try to convert this to Node.
+    App.showPostsForCurrentUser(1, posts => {
+      const root = document.getElementById('app')
+      posts.forEach(post => {
+        const element = document.createElement('div')
+        element.className = 'box'
+        element.innerHTML = post
+        root.appendChild(element)
+      })
+    })
+  </script>
+</body>
+</html>

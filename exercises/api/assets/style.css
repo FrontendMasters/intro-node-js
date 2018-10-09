@@ -1,0 +1,33 @@
+html, body, ul, ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: Roboto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background: #efefef;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 33%;
+}
+.card {
+  border: 1px solid lightgray;
+  border-radius: 3px; 
+  text-align: center;
+  background: white;
+}

@@ -1,0 +1,23 @@
+body, html, ul, ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.box {
+  flex: 1;
+  padding: 10px;
+}
+.post {
+  border: 1px solid blueviolet;
+  padding: 10px;
+  border-radius: 3px;
+}
+header {
+  height: 60px;
+  background-color: blueviolet;
+}
