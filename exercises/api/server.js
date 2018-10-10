@@ -43,7 +43,6 @@ const server = http.createServer(async (req, res) => {
   const route = url.parse(req.url).pathname
   // check the router for the incomming route + method pair
   const routeMatch = router[`${route} ${method}`]
-  debugger
   // return not found if the router does not have a match
   if (!routeMatch) {
     res.writeHead(404)
