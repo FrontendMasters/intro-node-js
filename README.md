@@ -14,6 +14,8 @@
 * [Slides](https://slides.com/scotups/deck/fullscreen)
 * [Nodejs](https://nodejs.org/en/)
 * [NVM](https://github.com/creationix/nvm)
+* [Heroku](https://heroku.com)
+* [NPM](https://www.npmjs.com/)
 
 ## Course
 This course has two parts, slides and excercises. The slides describe the excerices in detail. Each excercise has a folder
@@ -44,7 +46,7 @@ This exercise will have you convert some JavaScript written for the browser, so 
 You'll be creating a CLI program that saves and retrieves contacts from and address book. The program is partially there, however, you must install some remote modules, and use the fileSystem to get some things to work.
 
 - [ ] install all remote modules (hint: use npm)
-- [ ] Check the README on how to run your CLI
+- [ ] check the README on how to run your CLI
 - [ ] Fix the CLI so that the "new" command works by saving contacts to contacts.json
 - [ ] Fix the CLI so that the "list" command works by listing all contacts and allowing you to select one, the prints out the selected contact
 ### API (async code)
@@ -55,13 +57,23 @@ You'll be creating a CLI program that saves and retrieves contacts from and addr
 You'll be refacoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
 
 - [ ] install all remote modules (hint: use npm)
-- [ ] Check the README on how to run your CLI
+- [ ] check the README on how to run your server
 - [ ] refactor the sync file reading code to be async with a callback, promise, or async await
 - [ ] prevent the server from crashing when an assets is not found. Instead, respond with a 404 status code
 - [ ] create some sort of router logic to handle incoming requests for assets
-
 ### Debugging & Testing
-### Sharing and Deploying
+* location - `exercises/testing`
+* commands
+  * start the server - `node exercises/testing/index.js`
+  * test - `npm test` or `yarn test` or `npx jest`
 
+You have to debug and track down some issues in a small app. Use your logging and inspector to find them. Try and fix them, once you do, write some test to make sure it stays fixed 👌🏾😎💯
+
+- [ ] checkout to start branch
+- [ ] check the README on how to execute this program and run test
+- [ ] there are 3 bugs, find them and fix them
+- [ ] write some unit test with Jest to make sure those bugs stay fixed. Refactor the code if you have to
+### Sharing and Deploying
+Deploy one of the exercises to heroku (server) or npm (cli)
 
 

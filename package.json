@@ -7,6 +7,9 @@
   "devDependencies": {
     "jest": "^23.6.0"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "commander": "^2.18.0",
