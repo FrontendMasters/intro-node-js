@@ -72,6 +72,6 @@ You have to debug and track down some issues in a small app. Use your logging an
 - [ ] there are 3 bugs, find them and fix them
 - [ ] write some unit test with Jest to make sure those bugs stay fixed. Refactor the code if you have to
 ### Sharing and Deploying
-
+Deploy one of the exercises to heroku (server) or npm (cli)
 
 
