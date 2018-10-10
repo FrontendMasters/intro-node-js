@@ -55,7 +55,7 @@ You'll be creating a CLI program that saves and retrieves contacts from and addr
 You'll be refacoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
 
 - [ ] install all remote modules (hint: use npm)
-- [ ] Check the README on how to run your CLI
+- [ ] Check the README on how to run your server
 - [ ] refactor the sync file reading code to be async with a callback, promise, or async await
 - [ ] prevent the server from crashing when an assets is not found. Instead, respond with a 404 status code
 - [ ] create some sort of router logic to handle incoming requests for assets
