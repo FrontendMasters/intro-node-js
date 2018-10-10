@@ -14,6 +14,8 @@
 * [Slides](https://slides.com/scotups/deck/fullscreen)
 * [Nodejs](https://nodejs.org/en/)
 * [NVM](https://github.com/creationix/nvm)
+* [Heroku](https://heroku.com)
+* [NPM](https://www.npmjs.com/)
 
 ## Course
 This course has two parts, slides and excercises. The slides describe the excerices in detail. Each excercise has a folder
