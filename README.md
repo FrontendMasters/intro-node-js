@@ -27,6 +27,8 @@ nvm install node # node is an alias for the latest version
 nvm alias default node
 ```
 If this fails, or you want to install nodejs from nodejs source, [then go here](https://nodejs.org/en/)
+
+Important: After installing node, please run `npm install i` or `npm install` to install the dependencies located in the `package.json` file (utilized in future exercises).
 ### Modules (node vs browser)
 * location - `exercises/modules`
 * commands
