@@ -2,7 +2,7 @@
 > Scott Moss & Frontend Masters
 - [Resources](#resources)
 - [Course](#course)
-- [Excercises](#excercises)
+- [Exercises](#exercises)
   - [Installing Node](#installing-node)
   - [Modules (node vs browser)](#modules-node-vs-browser)
   - [CLI (npm)](#cli-npm)
