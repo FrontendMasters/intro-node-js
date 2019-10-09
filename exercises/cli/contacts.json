@@ -3,5 +3,15 @@
     "firstName": "adfsadf",
     "lastName": "asfdasdf",
     "phoneNumber": "asfdsf"
+  },
+  "Brian Samuel": {
+    "firstName": "Brian",
+    "lastName": "Samuel",
+    "phoneNumber": "78945612310"
+  },
+  "Test Node": {
+    "firstName": "Test",
+    "lastName": "Node",
+    "phoneNumber": "123121231"
   }
 }
