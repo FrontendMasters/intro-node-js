@@ -59,7 +59,5 @@ const server = http.createServer(async (req, res) => {
   logRequest(method, route, 200)
   res.end()
 })
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, hostname, ()=>{console.log(`listening on: http://${hostname}:${PORT}/`);});
