@@ -5,34 +5,30 @@ const path = require('path')
 const mime = require('mime')
 
 /**
- * async function that reads asset from disk
+ * this function is blocking, fix that
  * @param {String} name full file name of asset in asset folder
  */
 const findAsset = (name) => {
-  return new Promise((resolve, reject) => {
-    const assetPath = path.join(__dirname, 'assets', name)
-    fs.readFile(assetPath, {encoding: 'utf-8'}, (err, asset) => {
-      if (err) {
-        reject(err)
-      } else {
-        resolve(asset)
-      }
+  const assetPath = path.join(__dirname, 'assets', name)
+  return new Promise( (resolve, reject) => {
+    fs.readFile(assetPath, { encoding: 'utf-8'}, (error, result) => {
+      if (error) { reject(error) }
+      else { resolve(result) }
     })
-  })
+  });
 }
 
 const hostname = '127.0.0.1'
 const port = 3000
-// simple, quick router object
 const router = {
-  '/ GET': {
+  '/ GET' : {
     asset: 'index.html',
-    type: mime.getType('html')
+    mime: mime.getType('html')
   },
-  '/style.css GET': {
+  '/style.css GET' : {
     asset: 'style.css',
-    type: mime.getType('css')
-  }
+    mime: mime.getType('css')
+  },
 }
 
 // log incoming request coming into the server. Helpful for debugging and tracking
@@ -47,17 +43,15 @@ const server = http.createServer(async (req, res) => {
   if (!routeMatch) {
     res.writeHead(404)
     logRequest(method, route, 404)
-    return res.end()
+    res.end()
+    return
   }
-
-  const {type, asset} = routeMatch
-
-  // set the content-type header for the asset so applications like a browser will know how to handle it
-  res.writeHead(200,{'Content-Type': type})
+  // this is sloppy, espcially with more assets, create a "router"
+    res.writeHead(200, { 'Content-Type': match.mime })
+    res.write(await findAsset(match.asset))
+    logRequest(method, route, 200)
+    res.end()
   // most important part, send down the asset
-  res.write(await findAsset(asset))
-  logRequest(method, route, 200)
-  res.end()
 })
 
 server.listen(port, hostname, () => {
