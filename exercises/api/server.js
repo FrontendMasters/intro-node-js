@@ -21,7 +21,7 @@ const logRequest = (method, route, status) => console.log(method, route, status)
 const server = http.createServer((req, res) => {
   const method = req.method
   const route = url.parse(req.url).pathname
-  // this is sloppy, espcially with more assets, create a "router"
+  // this is sloppy, especially with more assets, create a "router"
   if (route === '/') {
     res.writeHead(200, {'Content-Type': 'text/html'})
     res.write(findAsset('index.html'))
