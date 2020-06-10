@@ -13,7 +13,9 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "http": "0.0.1-security",
     "mime": "^2.3.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "url": "^0.11.0"
   }
 }

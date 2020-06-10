@@ -56,7 +56,7 @@ You'll be creating a CLI program that saves and retrieves contacts from and addr
 * commands
   * start the server - `node exercises/api/server.js`
 
-You'll be refacoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
+You'll be refactoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
 
 - [ ] install all remote modules (hint: use npm)
 - [ ] check the README on how to run your server
