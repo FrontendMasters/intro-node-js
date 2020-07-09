@@ -1,4 +1,4 @@
-
+const {users,posts} = require('./data')
 
 const getUserById = (id, cb) => {
   // simulate API call
@@ -11,8 +11,8 @@ const getUserById = (id, cb) => {
 const getPostsForUser = (userId, cb) => {
   // simulate API call
   setTimeout(() => {
-    const posts = posts.filter(post => post.createdBy === userId)
-    cb(posts)
+    const _posts = posts.filter(post => post.createdBy === userId)
+    cb(_posts)
   }, 150)
 }
 
