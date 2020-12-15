@@ -1,14 +1,15 @@
 # Intro to Nodejs
 > Scott Moss & Frontend Masters
-- [Resources](#resources)
-- [Course](#course)
-- [Exercises](#exercises)
-  - [Installing Node](#installing-node)
-  - [Modules (node vs browser)](#modules-node-vs-browser)
-  - [CLI (npm)](#cli-npm)
-  - [API (async code)](#api-async-code)
-  - [Debugging & Testing](#debugging--testing)
-  - [Sharing and Deploying](#sharing-and-deploying)
+- [Intro to Nodejs](#intro-to-nodejs)
+  - [Resources](#resources)
+  - [Course](#course)
+  - [Exercises](#exercises)
+    - [Installing Node](#installing-node)
+    - [Modules (node vs browser)](#modules-node-vs-browser)
+    - [CLI (npm)](#cli-npm)
+    - [API (async code)](#api-async-code)
+    - [Debugging & Testing](#debugging--testing)
+    - [Sharing and Deploying](#sharing-and-deploying)
 
 ## Resources
 * [Slides](https://slides.com/scotups/deck/fullscreen)
@@ -23,7 +24,7 @@ Thanks for taking the [Introduction to Node.js course](https://frontendmasters.c
 ## Exercises
 
 ### Installing Node
-Install node with [node version manager (NVM)](https://github.com/creationix/nvm#installation). NVM was created by the community and not the Nodejs foundation. However, it is the recommended approach. After installing nvm, use nvm to install the lates version of Nodejs, which at this time is `10` and set it to the default version
+Install node with [node version manager (NVM)](https://github.com/creationix/nvm#installation). NVM was created by the community and not the Nodejs foundation. However, it is the recommended approach. After installing nvm, use nvm to install the latest version of Nodejs, which at this time is `10` and set it to the default version
 ```bash
 nvm install node # node is an alias for the latest version
 nvm alias default node
@@ -58,7 +59,7 @@ You'll be creating a CLI program that saves and retrieves contacts from and addr
 * commands
   * start the server - `node exercises/api/server.js`
 
-You'll be refacoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
+You'll be refactoring and fixing a simple static asset server. The server uses blocking sync code and crashes whenever a request comes in that is asking for an asset that is not found. Neither of those are desirable. You'll also have to teach the server how to server the assets it has in the `assets` folder.
 
 - [ ] install all remote modules (hint: use npm)
 - [ ] check the README on how to run your server
