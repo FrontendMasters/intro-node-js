@@ -39,6 +39,7 @@ const logRequest = (method, route, status) =>
   console.log(method, route, status);
 
 const server = http.createServer(async (req, res) => {
+<<<<<<< HEAD
   const method = req.method;
   const route = url.parse(req.url).pathname;
   const match = router[`${route} ${method}`];
@@ -47,6 +48,17 @@ const server = http.createServer(async (req, res) => {
     logRequest(method, route, 404);
     res.end();
     return;
+=======
+  const method = req.method
+  const route = url.parse(req.url).pathname
+  // check the router for the incomming route + method pair
+  const routeMatch = router[`${route} ${method}`]
+  // return not found if the router does not have a match
+  if (!routeMatch) {
+    res.writeHead(404)
+    logRequest(method, route, 404)
+    return res.end()
+>>>>>>> origin/HEAD
   }
   // this is sloppy, especially with more assets, create a "router"
 
