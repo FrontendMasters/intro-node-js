@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const mime = require('mime')
 
-/**
+/***
  * async function that reads asset from disk
  * @param {String} name full file name of asset in asset folder
  */
