@@ -2,7 +2,6 @@ const http = require('http')
 const url = require('url')
 const fs = require('fs')
 const path = require('path')
-const e = require('express')
 const mime = require('mime');
 
 /**
