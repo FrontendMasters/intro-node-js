@@ -2,7 +2,7 @@
 > Scott Moss & Frontend Masters
 - [Resources](#resources)
 - [Course](#course)
-- [Excercises](#excercises)
+- [Exercises](#exercises)
   - [Installing Node](#installing-node)
   - [Modules (node vs browser)](#modules-node-vs-browser)
   - [CLI (npm)](#cli-npm)
@@ -18,8 +18,10 @@
 * [NPM](https://www.npmjs.com/)
 
 ## Course
-This course has two parts, slides and exercises. The slides describe the exercises in detail. Each exercise has a folder
+Thanks for taking the [Introduction to Node.js course](https://frontendmasters.com/courses/node-js/) -- the course has two parts: slides and exercises. The slides describe the exercises in detail. Each exercise have a folder.
+
 ## Exercises
+
 ### Installing Node
 Install node with [node version manager (NVM)](https://github.com/creationix/nvm#installation). NVM was created by the community and not the Nodejs foundation. However, it is the recommended approach. After installing nvm, use nvm to install the lates version of Nodejs, which at this time is `10` and set it to the default version
 ```bash
@@ -35,7 +37,7 @@ Important: After installing node, please run `npm install i` or `npm install` to
   * test - `npx jest`
 
 This exercise will have you convert some JavaScript written for the browser, so that it works with node.
-- [ ] check out to start branch
+- [ ] checkout to start branch
 - [ ] check the README on how to run test (will talk later about that command)
 - [ ] fix and convert the 3 js files in the exercises/modules/browser to Nodejs JavaScript and place them in exercises/modules/node
 - [ ] ensure all tests pass by running test command again

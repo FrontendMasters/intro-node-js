@@ -4,10 +4,6 @@ const fs = require('fs')
 const path = require('path')
 const mime = require('mime');
 
-/**
- * this function is blocking, fix that
- * @param {String} name full file name of asset in asset folder
- */
 const findAsset = (name) => {
   const assetPath = path.join(__dirname, 'assets', name)
   return new Promise((resolve, reject)=>{
@@ -41,9 +37,10 @@ const logRequest = (method, route, status) => console.log(method, route, status)
 const server = http.createServer(async (req, res) => {
   const method = req.method
   const route = url.parse(req.url).pathname
-  const match = router[`${route} ${method}`]
-
-  if(!match){
+  // check the router for the incomming route + method pair
+  const routeMatch = router[`${route} ${method}`]
+  // return not found if the router does not have a match
+  if (!routeMatch) {
     res.writeHead(404)
     logRequest(method, route, 404)
     res.end()
