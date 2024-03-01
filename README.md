@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repo is from an archived version of the course. Watch the latest version of the course on [frontendmasters.com](https://frontendmasters.com/courses/node-js-v3/).
+
 # Intro to Nodejs
 > Scott Moss & Frontend Masters
 - [Resources](#resources)
