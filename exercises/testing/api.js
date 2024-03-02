@@ -16,7 +16,11 @@ app.get('/user/:id', async (req, res) => {
 })
 
 app.delete('/user/:id', async (req, res) => {
+
+  const id = req.id
+=======
   const id = req.params.id
+
   await users.deleteUser(id)
   res.status(201).send({id})
 })

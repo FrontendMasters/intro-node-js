@@ -21,6 +21,9 @@
 * [NPM](https://www.npmjs.com/)
 
 ## Course
+This course has two parts, slides and exercises. The slides describe the exercises in detail. Each exercise has a folder
+## Exercises
+=======
 Thanks for taking the [Introduction to Node.js course](https://frontendmasters.com/courses/node-js/) -- the course has two parts: slides and exercises. The slides describe the exercises in detail. Each exercise have a folder.
 
 ## Exercises
